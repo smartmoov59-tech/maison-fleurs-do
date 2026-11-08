@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maison Fleurs d’Ô — Fleuriste à Aix-en-Provence, place Jeanne d’Arc</title>
+<meta name="description" content="Maison Fleurs d’Ô, fleuriste place Jeanne d’Arc à Aix-en-Provence, à deux pas de la Rotonde : bouquets composés sous vos yeux, roses, plantes, livraison. Ouvert 7j/7. Réservez votre bouquet en ligne.">
+<meta name="theme-color" content="#14201b">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Maison Fleurs d’Ô — Fleuriste à Aix-en-Provence">
+<meta property="og:description" content="Bouquets composés minute, roses, plantes, livraison. Place Jeanne d’Arc, Aix-en-Provence. Ouvert 7j/7.">
+<meta property="og:image" content="img/kiosque-ombre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Mode "statique" (mobile ou mouvement réduit) : pas de sections épinglées, animations allégées */
+  (function(){
+    var d=document.documentElement;
+    d.classList.add('js');
+    var mq=window.matchMedia('(max-width: 900px), (prefers-reduced-motion: reduce)');
+    if(mq.matches) d.classList.add('static-mode');
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduced');
+    else {
+      d.classList.add('is-loading');
+      /* sécurité : si le script principal ne démarre pas, on libère la page */
+      setTimeout(function(){ if(!window.__foReady){ d.classList.remove('is-loading'); d.classList.add('loader-gone'); } }, 9000);
+    }
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Maison Fleurs d’Ô",
+  "description": "Fleuriste place Jeanne d’Arc à Aix-en-Provence : bouquets composés sur place, roses, plantes, fleurs séchées, livraison et retrait en boutique.",
+  "image": "img/kiosque-ombre.jpg",
+  "telephone": "+33442643505",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Place Jeanne d’Arc",
+    "postalCode": "13100",
+    "addressLocality": "Aix-en-Provence",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.5269561, "longitude": 5.4443361 },
+  "hasMap": "https://www.google.com/maps/place/Maison+Fleurs+d'%C3%B4/@43.5269561,5.4443361,17z/data=!4m6!3m5!1s0x12c98df3350ac09b:0xd684d86cc3b65869!8m2!3d43.5269561!4d5.4443361!16s%2Fg%2F11zyt47fx7",
+  "areaServed": ["Aix-en-Provence", "Les Milles"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:30", "closes": "19:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "09:30", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:30", "closes": "13:00" }
+  ],
+  "sameAs": [
+    "https://www.tiktok.com/@maisonfleursdo",
+    "https://www.florajet.com/fleuriste/bouches-du-rhone-13/aix-en-provence-13100/fleurs-d-o-132789.html"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ SPRITE SVG : icônes dessinées + motifs signature ============ -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Fil rouge : le moucharabieh ajouré du kiosque (cercles entrelacés) -->
+    <pattern id="lattice" width="96" height="96" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="0" cy="0" r="48"/><circle cx="96" cy="0" r="48"/><circle cx="0" cy="96" r="48"/><circle cx="96" cy="96" r="48"/>
+        <circle cx="48" cy="48" r="48"/>
+        <circle cx="48" cy="48" r="14"/>
+      </g>
+    </pattern>
+    <linearGradient id="fadeX" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+    <symbol id="petal" viewBox="0 0 40 60"><path d="M20 2C33 14 39 31 20 58 1 31 7 14 20 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.6l-5.8 3.1 1.1-6.5L2.6 9.6l6.5-.9z" fill="currentColor"/></symbol>
+    <symbol id="i-bouquet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><circle cx="7.5" cy="10.5" r="2.6"/><circle cx="16.5" cy="10.5" r="2.6"/><path d="M12 10v3M7.5 13.1 11 18M16.5 13.1 13 18M9 21l3-4 3 4z"/></g></symbol>
+    <symbol id="i-rose" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-9"/><path d="M12 13c-4.2 0-5.6-4.4-3.4-6.6 1-1 2.4-1 3.4.1 1-1.1 2.4-1.1 3.4-.1 2.200 2.200.8 6.600-3.400 6.600z"/><path d="M12 18c-2.200 0-3.500-1-4.500-2.500M12 19.500c2 0 3.300-1 4.300-2.300"/></g></symbol>
+    <symbol id="i-plant" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21h10l-1.200-6H8.200z"/><path d="M12 15V9M12 12c-3.200 0-5-2-5-5 3.200 0 5 2 5 5zM12 10c0-3.200 2-5.500 5-5.500 0 3.200-2 5.500-5 5.500z"/></g></symbol>
+    <symbol id="i-wheat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M12 6c-1.800-1-2.800-2.800-2.800-4.600 1.800 1 2.800 2.800 2.800 4.600zM12 6c1.800-1 2.800-2.800 2.800-4.600-1.800 1-2.800 2.800-2.800 4.600zM12 11c-2-1-3.200-3-3.200-5M12 11c2-1 3.200-3 3.200-5M12 16c-2-1-3.200-3-3.200-5M12 16c2-1 3.200-3 3.200-5"/></g></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.500" y="9" width="17" height="11.500" rx="1.200"/><path d="M12 9v11.500M3.500 13h17M12 9C9 9 7 8 7 6.200S9.800 4.500 12 9c2.200-4.500 5-3.700 5-2.800S15 9 12 9z"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l1 13H5z"/><path d="M9 8a3 3 0 0 1 6 0"/></g></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.500 6.500h11v10h-11zM13.500 10h4.200l3.300 3.300v3.200h-7.500"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="6" cy="6" r="2.500"/><circle cx="6" cy="18" r="2.500"/><path d="M8 7.500 20 18M8 16.500 20 6"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.500v3M12 18.500v3M2.500 12h3M18.500 12h3M5.300 5.300l2.100 2.100M16.600 16.600l2.100 2.100M18.700 5.300l-2.100 2.100M7.400 16.600l-2.100 2.100"/></g></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.500 7 8.500 6.500L20.500 7"/></g></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.200a3.700 3.700 0 1 1-3.700-3.700"/><path d="M14 3c.4 3 2.500 4.700 5.200 4.900"/></g></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- ============ LOADER : le rideau du kiosque qui se lève ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__shutter"></div>
+  <div class="loader__inner">
+    <svg class="loader__ring" viewBox="0 0 200 200">
+      <circle class="loader__circle" cx="100" cy="112" r="64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" pathLength="1"/>
+      <path class="loader__leaf" d="M100 8c14 14 16 30 0 46-16-16-14-32 0-46z" fill="currentColor"/>
+    </svg>
+    <p class="loader__name"><span>Maison</span> Fleurs d’Ô</p>
+    <p class="loader__count"><span id="loaderCount">0</span><small>%</small></p>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#accueil" aria-label="Maison Fleurs d’Ô — accueil">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="24" r="12.500" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 2c3 3 3.500 6.500 0 10-3.500-3.500-3-7 0-10z" fill="currentColor"/></svg>
+    <span>Maison <em>Fleurs d’Ô</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#histoire">Le kiosque</a>
+    <a href="#creations">Créations</a>
+    <a href="#services">Services</a>
+    <a href="#avis">Avis</a>
+    <a href="#venir">Nous trouver</a>
+  </nav>
+  <a class="btn btn--small btn--fill magnetic" href="#reserver"><span>Réserver</span></a>
+  <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__links" aria-label="Menu mobile">
+    <a href="#histoire"><i>01</i>Le kiosque</a>
+    <a href="#creations"><i>02</i>Créations</a>
+    <a href="#services"><i>03</i>Services</a>
+    <a href="#avis"><i>04</i>Avis</a>
+    <a href="#reserver"><i>05</i>Réserver</a>
+    <a href="#venir"><i>06</i>Nous trouver</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="tel:+33442643505"><svg class="ico"><use href="#i-phone"/></svg> 04 42 64 35 05</a>
+    <span>Place Jeanne d’Arc · Aix-en-Provence</span>
+  </div>
+</div>
+
+<main id="contenu">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil" aria-label="Accueil">
+  <div class="hero__media" id="heroMedia">
+    <!-- La source (720p mobile / 1080p desktop) est choisie par js/main.js pour ne télécharger qu'un seul fichier -->
+    <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" aria-hidden="true" tabindex="-1" data-src-sm="video/hero-720.mp4" data-src-lg="video/hero-1080.mp4"></video>
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__petals" id="petals" aria-hidden="true"></div>
+
+  <div class="hero__screen hero__screen--l" aria-hidden="true">
+    <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#lattice)"/></svg>
+  </div>
+  <div class="hero__screen hero__screen--r" aria-hidden="true">
+    <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#lattice)"/></svg>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow hero__eyebrow"><svg class="ico"><use href="#i-pin"/></svg> Fleuriste · Place Jeanne d’Arc · Aix-en-Provence</p>
+    <h1 class="hero__title" aria-label="Maison Fleurs d’Ô">
+      <span class="hero__maison" data-split aria-hidden="true">Maison</span>
+      <span class="hero__big" aria-hidden="true"><span data-split>Fleurs d’</span><span class="o"><span class="o__ch">Ô</span><svg class="o__ring" viewBox="0 0 100 100"><circle cx="50" cy="55" r="44" fill="none" stroke="currentColor" stroke-width="1.6" pathLength="1"/></svg></span></span>
+    </h1>
+    <p class="hero__lead">Roses du matin, bouquets composés sous vos yeux, papier kraft et petit mot&nbsp;: le fleuriste de la place Jeanne d’Arc, à deux pas de la Rotonde.</p>
+    <div class="hero__cta">
+      <a class="btn btn--fill btn--big magnetic" href="#reserver"><span>Réserver mon bouquet</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost btn--big magnetic" href="tel:+33442643505"><svg class="ico"><use href="#i-phone"/></svg><span>04 42 64 35 05</span></a>
+    </div>
+  </div>
+
+  <div class="hero__foot">
+    <a class="chip" href="#avis"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>5,0</b> · 63 avis Google</a>
+    <p class="chip chip--open" id="openBadge" aria-live="polite"><i class="dot"></i><span>Ouvert 7j/7 · dès 9h30</span></p>
+    <a class="hero__scroll" href="#histoire" aria-label="Descendre"><span></span>Défiler</a>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" id="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack">
+    <div class="marquee__group">
+      <span>Bouquets minute</span><svg><use href="#petal"/></svg><span>Roses</span><svg><use href="#petal"/></svg><span>Plantes</span><svg><use href="#petal"/></svg><span>Fleurs séchées</span><svg><use href="#petal"/></svg><span>Livraison Aix</span><svg><use href="#petal"/></svg><span>Ouvert 7j/7</span><svg><use href="#petal"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HISTOIRE (section épinglée) ============ -->
+<section class="story scalloped" id="histoire" aria-labelledby="storyTitle" style="--bg:var(--ink)">
+  <div class="story__pin" id="storyPin">
+    <div class="story__lattice" aria-hidden="true"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#lattice)"/></svg></div>
+    <div class="story__head">
+      <p class="eyebrow">Le kiosque</p>
+      <h2 id="storyTitle" class="sr-only">Le kiosque de la place Jeanne d’Arc, en quatre gestes</h2>
+    </div>
+    <div class="story__grid">
+      <ol class="story__steps" id="storySteps">
+        <li class="step is-active" data-step="0">
+          <span class="step__no">01</span>
+          <h3 class="step__title" data-split-title>Un kiosque, une place, une porte qui sent bon.</h3>
+          <p>Place Jeanne d’Arc, à deux pas de la Rotonde&nbsp;: un kiosque de bois clair et d’acier ajouré. Dès 9h30, le rideau se lève, les seaux sortent sur la place et les roses prennent le soleil d’Aix.</p>
+        </li>
+        <li class="step" data-step="1">
+          <span class="step__no">02</span>
+          <h3 class="step__title" data-split-title>Le choix, d’abord.</h3>
+          <p>Roses, chardons bleus, gypsophile, baies rouges… les étals débordent et changent avec les saisons. Ici, on choisit ses fleurs une à une, ou on se laisse conseiller.</p>
+        </li>
+        <li class="step" data-step="2">
+          <span class="step__no">03</span>
+          <h3 class="step__title" data-split-title>La main qui compose.</h3>
+          <p>On assemble sous vos yeux, on ajuste jusqu’à ce que ça vous ressemble, puis on emballe dans le papier kraft. Un bouquet, ça se règle à la tige près.</p>
+        </li>
+        <li class="step" data-step="3">
+          <span class="step__no">04</span>
+          <h3 class="step__title" data-split-title>Le dernier détail&nbsp;: un ruban, un mot.</h3>
+          <p>Une rose à l’unité avec sa petite carte, un bouquet pour l’anniversaire de mamie, et même un seau d’eau pour que tout tienne jusqu’au moment d’offrir.</p>
+        </li>
+      </ol>
+      <div class="story__visual">
+        <div class="story__frame" id="storyFrame">
+          <figure class="shot is-active" data-shot="0"><img src="img/place.jpg" alt="Le kiosque Maison Fleurs d’Ô place Jeanne d’Arc, sous les platanes, à Aix-en-Provence" loading="lazy" width="1448" height="1086"></figure>
+          <figure class="shot" data-shot="1"><img src="img/etal-roses.jpg" alt="L’étal de fleurs : roses vertes, chardons bleus, gypsophile et baies rouges" loading="lazy" width="1125" height="1500"></figure>
+          <figure class="shot shot--video" data-shot="2"><video muted loop playsinline preload="none" poster="img/bouquet-kraft.jpg" aria-hidden="true" tabindex="-1" data-lazy-video><source src="video/mains-fleurs.mp4" type="video/mp4"></video></figure>
+          <figure class="shot" data-shot="3"><img src="img/rose-unite.jpg" alt="Deux roses à l’unité emballées avec ruban rose et petite carte" loading="lazy" width="1125" height="1500"></figure>
+        </div>
+        <div class="story__ring" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width=".6" pathLength="1"/></svg></div>
+        <div class="story__count" aria-hidden="true"><b id="storyNo">01</b><span>/04</span></div>
+        <div class="story__bar" aria-hidden="true"><i id="storyBar"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRÉATIONS (défilement horizontal) ============ -->
+<section class="creations" id="creations" aria-labelledby="creaTitle">
+  <div class="creations__pin" id="creaPin">
+    <div class="creations__track" id="creaTrack">
+
+      <div class="crea-intro">
+        <p class="eyebrow eyebrow--dark">Nos créations</p>
+        <h2 id="creaTitle" class="display" data-split-title>Des fleurs faites à la main, <em>et celles qui voyagent.</em></h2>
+        <p class="crea-intro__txt">Faits main au kiosque, ou choisis dans la sélection du moment pour un retrait ou une livraison&nbsp;: faites défiler, puis réservez celui qui vous plaît.</p>
+        <p class="crea-hint" aria-hidden="true">Faites défiler <svg class="ico"><use href="#i-arrow"/></svg></p>
+      </div>
+
+      <article class="card tilt" data-product="Bouquet du fleuriste (composé sur place)">
+        <div class="card__img"><img src="img/bouquet-kraft.jpg" alt="Bouquet en papier kraft : dahlia blanc, renoncules roses, marguerites, gypsophile et eucalyptus" loading="lazy" width="1125" height="1500"></div>
+        <span class="card__tag">Fait main</span>
+        <div class="card__body">
+          <h3>Le bouquet du fleuriste</h3>
+          <p>Composé sur place selon vos goûts et votre budget, emballé dans le papier kraft de la maison.</p>
+          <p class="card__price"><b>dès 18,50&nbsp;€</b><small>*</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Bouquet du fleuriste (composé sur place)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Rose à l’unité ou bouquet de roses">
+        <div class="card__img"><img src="img/rose-unite.jpg" alt="Roses à l’unité avec ruban rose et petite carte à code QR" loading="lazy" width="1125" height="1500"></div>
+        <span class="card__tag">Fait main</span>
+        <div class="card__body">
+          <h3>La rose à l’unité</h3>
+          <p>Une tige, un ruban, une petite carte. Le plus simple des gestes, le plus joliment emballé.</p>
+          <p class="card__price"><b>Prix en boutique</b></p>
+          <a class="card__cta" href="#reserver" data-pick="Rose à l’unité ou bouquet de roses">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Bouquet rond pastel (sur mesure)">
+        <div class="card__img"><img src="img/bouquet-rond.jpg" alt="Bouquet rond pastel de roses, lisianthus et gypsophile" loading="lazy" width="1125" height="1236"></div>
+        <span class="card__tag">Sur mesure</span>
+        <div class="card__body">
+          <h3>Le bouquet rond pastel</h3>
+          <p>Roses, lisianthus, gypsophile&nbsp;: un bouquet romantique, dosé selon l’occasion et le budget.</p>
+          <p class="card__price"><b>Selon budget</b></p>
+          <a class="card__cta" href="#reserver" data-pick="Bouquet rond pastel (sur mesure)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Coccinelle (catalogue)">
+        <div class="card__img card__img--cat"><img src="img/catalogue/coccinelle.jpg" alt="Bouquet Coccinelle : gerberas jaunes, roses rouges et orangées" loading="lazy" width="600" height="600"></div>
+        <span class="card__tag card__tag--cat">Sélection</span>
+        <div class="card__body">
+          <h3>Coccinelle</h3>
+          <p>Gerberas solaires, roses rouges et feuillages&nbsp;: un bouquet qui met de bonne humeur.</p>
+          <p class="card__price"><b>dès 35,90&nbsp;€</b><small>**</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Coccinelle (catalogue)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Douceur Automnale (catalogue)">
+        <div class="card__img card__img--cat"><img src="img/catalogue/douceur-automnale.jpg" alt="Bouquet Douceur Automnale : œillets et gerberas orangés, chardons, brins roses" loading="lazy" width="600" height="600"></div>
+        <span class="card__tag card__tag--cat">Sélection</span>
+        <div class="card__body">
+          <h3>Douceur Automnale</h3>
+          <p>Orangés, chardons et brins légers&nbsp;: les couleurs de la saison dans la main.</p>
+          <p class="card__price"><b>dès 38,90&nbsp;€</b><small>**</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Douceur Automnale (catalogue)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Fauve (catalogue)">
+        <div class="card__img card__img--cat"><img src="img/catalogue/fauve.jpg" alt="Bouquet Fauve en vase : roses orange, baies rouges et feuillages cuivrés" loading="lazy" width="600" height="600"></div>
+        <span class="card__tag card__tag--cat">Sélection</span>
+        <div class="card__body">
+          <h3>Fauve</h3>
+          <p>Roses cuivrées, baies et feuillages bordeaux&nbsp;: un bouquet de caractère.</p>
+          <p class="card__price"><b>dès 39,90&nbsp;€</b><small>**</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Fauve (catalogue)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Terra Nova L (catalogue)">
+        <div class="card__img card__img--cat"><img src="img/catalogue/terra-nova.jpg" alt="Grand bouquet Terra Nova : roses pêche, œillets, lisianthus et feuillages" loading="lazy" width="600" height="600"></div>
+        <span class="card__tag card__tag--cat">Sélection</span>
+        <div class="card__body">
+          <h3>Terra Nova L</h3>
+          <p>Le grand format, pêche et crème, généreux et lumineux. Pour marquer le coup.</p>
+          <p class="card__price"><b>52,90&nbsp;€</b><small>**</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Terra Nova L (catalogue)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <article class="card tilt" data-product="Orchidée 2 branches (plante)">
+        <div class="card__img card__img--cat"><img src="img/catalogue/orchidee.jpg" alt="Orchidée phalaenopsis violette à deux branches dans un cache-pot blanc" loading="lazy" width="600" height="600"></div>
+        <span class="card__tag card__tag--cat">Plante</span>
+        <div class="card__body">
+          <h3>Orchidée, 2 branches</h3>
+          <p>Un cadeau qui dure&nbsp;: deux branches de phalaenopsis dans leur cache-pot.</p>
+          <p class="card__price"><b>29,90&nbsp;€</b><small>**</small></p>
+          <a class="card__cta" href="#reserver" data-pick="Orchidée 2 branches (plante)">Réserver <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+        <i class="glare"></i>
+      </article>
+
+      <div class="crea-end">
+        <p>Une autre idée en tête&nbsp;?</p>
+        <a class="btn btn--fill btn--big magnetic" href="#reserver"><span>Composer ma réservation</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+        <small>* Tarif relevé dans un avis client (bouquet composé sur place). ** Prix indicatifs de la sélection en ligne, susceptibles de varier&nbsp;: la boutique confirme à la réservation.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services scalloped" id="services" aria-labelledby="svcTitle" style="--bg:var(--paper)">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark" data-reveal>Ce qu’on fait ici</p>
+    <h2 id="svcTitle" class="display display--m" data-split-title>Huit façons de <em>dire&nbsp;:</em> «&nbsp;pensé à vous&nbsp;».</h2>
+    <ul class="svc-list" id="svcList">
+      <li class="svc" data-img="img/bouquet-kraft.jpg"><a href="#reserver" data-pick="Bouquet du fleuriste (composé sur place)">
+        <span class="svc__no">01</span><svg class="ico svc__ico"><use href="#i-bouquet"/></svg>
+        <span class="svc__name">Bouquets composés minute</span>
+        <span class="svc__txt">Vous choisissez les fleurs, l’équipe compose et emballe devant vous.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/entree.jpg"><a href="#reserver" data-pick="Bouquet du fleuriste (composé sur place)">
+        <span class="svc__no">02</span><svg class="ico svc__ico"><use href="#i-bag"/></svg>
+        <span class="svc__name">Retrait en boutique</span>
+        <span class="svc__txt">Réservez ici, passez le prendre au kiosque quand vous voulez.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/kiosque-ombre.jpg"><a href="#reserver" data-pick="Livraison à Aix-en-Provence / Les Milles">
+        <span class="svc__no">03</span><svg class="ico svc__ico"><use href="#i-truck"/></svg>
+        <span class="svc__name">Livraison Aix &amp; Les Milles</span>
+        <span class="svc__txt">Y compris le dimanche, en 3&nbsp;h via le réseau Florajet.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/etal-trottoir.jpg"><a href="#reserver" data-pick="Rose à l’unité ou bouquet de roses">
+        <span class="svc__no">04</span><svg class="ico svc__ico"><use href="#i-rose"/></svg>
+        <span class="svc__name">Roses &amp; bouquets de roses</span>
+        <span class="svc__txt">À l’unité, en brassée ou en grand format.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/catalogue/orchidee.jpg"><a href="#reserver" data-pick="Orchidée 2 branches (plante)">
+        <span class="svc__no">05</span><svg class="ico svc__ico"><use href="#i-plant"/></svg>
+        <span class="svc__name">Plantes &amp; orchidées</span>
+        <span class="svc__txt">Orchidées, oliviers en pot, plantes d’intérieur&nbsp;: des cadeaux qui durent.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/interieur.jpg"><a href="#reserver" data-pick="Fleurs séchées">
+        <span class="svc__no">06</span><svg class="ico svc__ico"><use href="#i-wheat"/></svg>
+        <span class="svc__name">Fleurs séchées</span>
+        <span class="svc__txt">Des bouquets qui ne fanent pas, pour la déco ou pour offrir.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/etal-roses.jpg"><a href="#reserver" data-pick="Bouquet DIY (à composer soi-même)">
+        <span class="svc__no">07</span><svg class="ico svc__ico"><use href="#i-scissors"/></svg>
+        <span class="svc__name">Bouquets DIY</span>
+        <span class="svc__txt">Les fleurs en kit, pour composer son bouquet à la maison.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+      <li class="svc" data-img="img/bouquet-rond.jpg"><a href="#reserver" data-pick="Cadeau (chocolats, bougies…)">
+        <span class="svc__no">08</span><svg class="ico svc__ico"><use href="#i-gift"/></svg>
+        <span class="svc__name">Petites attentions</span>
+        <span class="svc__txt">Chocolats, bougies, douceurs&nbsp;: de quoi compléter le bouquet.</span>
+        <svg class="ico svc__go"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+  </div>
+  <div class="svc-preview" id="svcPreview" aria-hidden="true"><img alt="" src="img/bouquet-kraft.jpg"></div>
+</section>
+
+<!-- ============ CHIFFRES ============ -->
+<section class="stats scalloped" id="chiffres" aria-label="Maison Fleurs d’Ô en chiffres" style="--bg:var(--corten)">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light" data-reveal>En chiffres</p>
+    <div class="stats__grid">
+      <div class="stat" data-reveal>
+        <svg class="stat__ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2"/><circle class="stat__arc" cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1" data-fill="1"/></svg>
+        <p class="stat__num"><span data-count="5" data-decimals="1" data-locale="fr">0</span></p>
+        <p class="stat__lbl">note moyenne sur Google</p>
+      </div>
+      <div class="stat" data-reveal>
+        <svg class="stat__ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2"/><circle class="stat__arc" cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1" data-fill=".63"/></svg>
+        <p class="stat__num"><span data-count="63">0</span></p>
+        <p class="stat__lbl">avis clients Google</p>
+      </div>
+      <div class="stat" data-reveal>
+        <svg class="stat__ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2"/><circle class="stat__arc" cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1" data-fill="1"/></svg>
+        <p class="stat__num"><span data-count="7">0</span><small>/7</small></p>
+        <p class="stat__lbl">jours d’ouverture, dimanche compris</p>
+      </div>
+      <div class="stat" data-reveal>
+        <svg class="stat__ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2"/><circle class="stat__arc" cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1" data-fill=".4"/></svg>
+        <p class="stat__num"><span data-count="3">0</span><small>h</small></p>
+        <p class="stat__lbl">livraison express possible via Florajet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery" id="galerie" aria-labelledby="galTitle">
+  <div class="wrap gallery__head">
+    <p class="eyebrow eyebrow--dark" data-reveal>Galerie</p>
+    <h2 id="galTitle" class="display" data-split-title>Un tour <em>au kiosque.</em></h2>
+  </div>
+  <div class="gal" id="gal">
+    <div class="gal__col" data-speed="-60">
+      <figure class="gfig tilt" data-cap="L’entrée du kiosque, entre acier ajouré et plantes"><button type="button" class="gfig__btn" aria-label="Agrandir : l’entrée du kiosque"><span class="gfig__in"><img src="img/entree.jpg" alt="L’entrée du kiosque Maison Fleurs d’Ô : écrans d’acier ajouré, comptoir en bois et plantes" loading="lazy" width="1125" height="1500"></span></button><figcaption>L’entrée du kiosque</figcaption></figure>
+      <figure class="gfig tilt gfig--wide" data-cap="Place Jeanne d’Arc, côté Rotonde"><button type="button" class="gfig__btn" aria-label="Agrandir : la place Jeanne d’Arc"><span class="gfig__in"><img src="img/place.jpg" alt="Le kiosque vu depuis la place Jeanne d’Arc, sous les arbres" loading="lazy" width="1448" height="1086"></span></button><figcaption>Place Jeanne d’Arc</figcaption></figure>
+      <figure class="gfig tilt" data-cap="Roses, chardons, baies : l’étal du jour"><button type="button" class="gfig__btn" aria-label="Agrandir : l’étal du jour"><span class="gfig__in"><img src="img/etal-roses.jpg" alt="Étal de roses vertes, chardons bleus, baies rouges et gypsophile" loading="lazy" width="1125" height="1500"></span></button><figcaption>L’étal du jour</figcaption></figure>
+    </div>
+    <div class="gal__col" data-speed="40">
+      <figure class="gfig tilt" data-cap="Sous les platanes, le rideau est levé"><button type="button" class="gfig__btn" aria-label="Agrandir : le kiosque sous les platanes"><span class="gfig__in"><img src="img/kiosque-ombre.jpg" alt="Façade du kiosque Maison Fleurs d’Ô sous les feuillages, auvent anthracite" loading="lazy" width="1125" height="1500"></span></button><figcaption>Sous les platanes</figcaption></figure>
+      <figure class="gfig tilt" data-cap="Papier kraft, rose poudré, gypsophile"><button type="button" class="gfig__btn" aria-label="Agrandir : bouquet en papier kraft"><span class="gfig__in"><img src="img/bouquet-kraft.jpg" alt="Bouquet en papier kraft avec dahlia, renoncules roses et gypsophile" loading="lazy" width="1125" height="1500"></span></button><figcaption>Papier kraft</figcaption></figure>
+      <figure class="gfig tilt" data-cap="La rose à l’unité, ruban et petite carte"><button type="button" class="gfig__btn" aria-label="Agrandir : roses à l’unité"><span class="gfig__in"><img src="img/rose-unite.jpg" alt="Deux roses à l’unité tenues à la main, ruban rose et carte" loading="lazy" width="1125" height="1500"></span></button><figcaption>La rose à l’unité</figcaption></figure>
+    </div>
+    <div class="gal__col" data-speed="-30">
+      <figure class="gfig tilt" data-cap="Dedans, le bois clair et les étagères pleines"><button type="button" class="gfig__btn" aria-label="Agrandir : l’intérieur du kiosque"><span class="gfig__in"><img src="img/interieur.jpg" alt="Intérieur du kiosque : bois clair, étagères de plantes et fleurs coupées" loading="lazy" width="1125" height="1500"></span></button><figcaption>Dedans</figcaption></figure>
+      <figure class="gfig tilt" data-cap="Un bouquet rond, pastel et romantique"><button type="button" class="gfig__btn" aria-label="Agrandir : bouquet rond pastel"><span class="gfig__in"><img src="img/bouquet-rond.jpg" alt="Bouquet rond pastel de roses et lisianthus" loading="lazy" width="1125" height="1236"></span></button><figcaption>Bouquet rond pastel</figcaption></figure>
+      <figure class="gfig tilt" data-cap="Les roses en seau, prêtes à partir"><button type="button" class="gfig__btn" aria-label="Agrandir : roses en seau"><span class="gfig__in"><img src="img/etal-trottoir.jpg" alt="Roses emballées dans un seau devant l’étal sur la place" loading="lazy" width="1125" height="1500"></span></button><figcaption>Roses en seau</figcaption></figure>
+      <figure class="gfig tilt" data-cap="Une rose pour la route"><button type="button" class="gfig__btn" aria-label="Agrandir : une rose pour la route"><span class="gfig__in"><img src="img/kiosque-rose.jpg" alt="Une rose emballée tenue devant le kiosque, deux fleuristes au fond" loading="lazy" width="1125" height="1500"></span></button><figcaption>Une rose pour la route</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="reviews scalloped" id="avis" aria-labelledby="revTitle" style="--bg:var(--blush)">
+  <div class="wrap reviews__grid">
+    <div class="reviews__lead">
+      <p class="eyebrow eyebrow--dark" data-reveal>Avis clients</p>
+      <h2 id="revTitle" class="display display--m" data-split-title>Ils en parlent <em>mieux que nous.</em></h2>
+      <div class="rating" data-reveal>
+        <b>5,0</b>
+        <div>
+          <span class="stars stars--dark" role="img" aria-label="5 étoiles sur 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <p>63 avis Google</p>
+        </div>
+      </div>
+      <div class="reviews__nav" data-reveal>
+        <button class="round" id="revPrev" aria-label="Avis précédent"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+        <button class="round" id="revNext" aria-label="Avis suivant"><svg class="ico"><use href="#i-arrow"/></svg></button>
+        <a class="link" href="https://www.google.com/maps/place/Maison+Fleurs+d'%C3%B4/@43.5269561,5.4443361,17z/data=!4m6!3m5!1s0x12c98df3350ac09b:0xd684d86cc3b65869!8m2!3d43.5269561!4d5.4443361!16s%2Fg%2F11zyt47fx7" target="_blank" rel="noopener">Lire les 63 avis sur Google Maps</a>
+      </div>
+    </div>
+    <div class="reviews__rail" id="revRail" tabindex="0" aria-label="Avis clients, faites défiler">
+      <blockquote class="rev"><svg class="rev__q" aria-hidden="true"><use href="#petal"/></svg><p>Très joli kiosque, avec un accueil souriant et chaleureux. Les fleuristes ont été très agréables et à l’écoute. Les prix sont abordables au regard de la qualité du service et des fleurs proposées. On s’y sent bien et ça donne vraiment envie d’y revenir.</p><footer><b>Apolline R.</b><span>Avis Google · octobre 2026</span></footer></blockquote>
+      <blockquote class="rev"><svg class="rev__q" aria-hidden="true"><use href="#petal"/></svg><p>Très bien accueilli par Louise et Florence, beaucoup de choix et des compositions faites avec goût. Merci&nbsp;!</p><footer><b>Yann</b><span>Local Guide · Avis Google · octobre 2026</span></footer></blockquote>
+      <blockquote class="rev"><svg class="rev__q" aria-hidden="true"><use href="#petal"/></svg><p>Anne-Lise et Florence sont très sympathiques et de bon conseil. Florence m’a fait un magnifique bouquet, merci&nbsp;!</p><footer><b>Camille T.</b><span>Avis Google · octobre 2026</span></footer></blockquote>
+      <blockquote class="rev"><svg class="rev__q" aria-hidden="true"><use href="#petal"/></svg><p>Très gentille. Ouvert le lundi, j’ai pu composer mon bouquet et elle a pu me donner un seau d’eau pour que les fleurs restent hydratées le temps de les offrir. 18,50&nbsp;€ pour ce sublime bouquet.</p><footer><b>Margaux G.</b><span>Local Guide · Avis Google · octobre 2026</span></footer></blockquote>
+      <blockquote class="rev"><svg class="rev__q" aria-hidden="true"><use href="#petal"/></svg><p>Un grand merci à Alex et Florence pour leur accueil chaleureux, leur gentillesse et leurs précieux conseils&nbsp;! On sent qu’ils aiment leur métier et qu’ils mettent du cœur dans ce qu’ils font. Les fleurs sont magnifiques et le service est au top. Je recommande les yeux fermés, allez-y sans hésiter&nbsp;!</p><footer><b>Yahya C.</b><span>Avis Google · octobre 2026</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉSERVATION ============ -->
+<section class="booking" id="reserver" aria-labelledby="bookTitle">
+  <video class="booking__video" id="bookVideo" muted loop playsinline preload="none" poster="img/bouquet-rond.jpg" aria-hidden="true" tabindex="-1" data-lazy-video><source src="video/pivoines.mp4" type="video/mp4"></video>
+  <div class="booking__veil"></div>
+  <div class="wrap booking__grid">
+    <div class="booking__pitch">
+      <p class="eyebrow eyebrow--light" data-reveal>Réserver</p>
+      <h2 id="bookTitle" class="display" data-split-title>Votre bouquet, <em>prêt à votre arrivée.</em></h2>
+      <p class="booking__txt" data-reveal>Dites-nous l’occasion, le jour et le budget&nbsp;: on prépare, vous passez le prendre ou on le livre à Aix et aux Milles. Deux minutes, sans compte à créer.</p>
+      <ul class="booking__facts" data-reveal>
+        <li><svg class="ico"><use href="#i-calendar"/></svg> Retrait en boutique 7j/7</li>
+        <li><svg class="ico"><use href="#i-truck"/></svg> Livraison Aix &amp; Les Milles</li>
+        <li><svg class="ico"><use href="#i-clock"/></svg> Récapitulatif ajouté à votre agenda</li>
+      </ul>
+      <a class="bigtel magnetic" href="tel:+33442643505" data-reveal><svg class="ico"><use href="#i-phone"/></svg><span><small>Plutôt au téléphone&nbsp;?</small>04 42 64 35 05</span></a>
+    </div>
+
+    <div class="bk" id="bk" data-reveal>
+      <ol class="bk__steps" aria-label="Étapes de la réservation">
+        <li class="is-on"><i>1</i><span>Envie</span></li>
+        <li><i>2</i><span>Quand</span></li>
+        <li><i>3</i><span>Détails</span></li>
+        <li><i>4</i><span>Récap</span></li>
+      </ol>
+
+      <form class="bk__form" id="bkForm" novalidate autocomplete="on">
+        <!-- Étape 1 -->
+        <section class="bk__pane is-on" data-pane="0" aria-labelledby="bk0">
+          <h3 id="bk0">Pour quelle occasion&nbsp;?</h3>
+          <fieldset class="chips" aria-label="Occasion">
+            <label><input type="radio" name="occasion" value="Anniversaire" required><span>Anniversaire</span></label>
+            <label><input type="radio" name="occasion" value="Amour"><span>Amour</span></label>
+            <label><input type="radio" name="occasion" value="Remerciement"><span>Remerciement</span></label>
+            <label><input type="radio" name="occasion" value="Naissance"><span>Naissance</span></label>
+            <label><input type="radio" name="occasion" value="Deuil"><span>Deuil</span></label>
+            <label><input type="radio" name="occasion" value="Pour moi"><span>Pour moi</span></label>
+            <label><input type="radio" name="occasion" value="Autre"><span>Autre</span></label>
+          </fieldset>
+          <h3 class="bk__h3b" id="bk0b">Quelle création&nbsp;?</h3>
+          <fieldset class="picks" aria-label="Création">
+            <label><input type="radio" name="produit" value="Bouquet du fleuriste (composé sur place)" required><span><svg class="ico"><use href="#i-bouquet"/></svg>Bouquet du fleuriste<small>composé sur place</small></span></label>
+            <label><input type="radio" name="produit" value="Rose à l’unité ou bouquet de roses"><span><svg class="ico"><use href="#i-rose"/></svg>Roses<small>à l’unité ou en bouquet</small></span></label>
+            <label><input type="radio" name="produit" value="Plante ou orchidée"><span><svg class="ico"><use href="#i-plant"/></svg>Plante<small>orchidée, olivier…</small></span></label>
+            <label><input type="radio" name="produit" value="Bouquet de la sélection (catalogue)"><span><svg class="ico"><use href="#i-gift"/></svg>Sélection<small>Coccinelle, Fauve, Terra Nova…</small></span></label>
+            <label><input type="radio" name="produit" value="Autre idée (à préciser)"><span><svg class="ico"><use href="#i-scissors"/></svg>Autre idée<small>je précise après</small></span></label>
+          </fieldset>
+          <p class="bk__err" role="alert" aria-live="assertive"></p>
+          <div class="bk__nav"><span></span><button type="button" class="btn btn--fill" data-next><span>Continuer</span><svg class="ico"><use href="#i-arrow"/></svg></button></div>
+        </section>
+
+        <!-- Étape 2 -->
+        <section class="bk__pane" data-pane="1" aria-labelledby="bk1">
+          <h3 id="bk1">Retrait ou livraison&nbsp;?</h3>
+          <fieldset class="seg" aria-label="Mode">
+            <label><input type="radio" name="mode" value="Retrait en boutique" checked><span><svg class="ico"><use href="#i-bag"/></svg>Je passe le prendre</span></label>
+            <label><input type="radio" name="mode" value="Livraison"><span><svg class="ico"><use href="#i-truck"/></svg>Livrez-le</span></label>
+          </fieldset>
+          <div class="field field--deliv" id="delivBox" hidden>
+            <label for="adresse">Adresse de livraison <small>(Aix-en-Provence ou Les Milles)</small></label>
+            <input id="adresse" name="adresse" type="text" autocomplete="street-address" placeholder="N° et rue, code postal, ville">
+          </div>
+          <h3 class="bk__h3b">Quel jour&nbsp;?</h3>
+          <div class="days" id="days" role="radiogroup" aria-label="Jour"></div>
+          <h3 class="bk__h3b">À quelle heure&nbsp;? <small id="slotHint"></small></h3>
+          <div class="slots" id="slots" role="radiogroup" aria-label="Heure"></div>
+          <p class="bk__err" role="alert" aria-live="assertive"></p>
+          <div class="bk__nav"><button type="button" class="btn btn--line" data-prev><svg class="ico" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg><span>Retour</span></button><button type="button" class="btn btn--fill" data-next><span>Continuer</span><svg class="ico"><use href="#i-arrow"/></svg></button></div>
+        </section>
+
+        <!-- Étape 3 -->
+        <section class="bk__pane" data-pane="2" aria-labelledby="bk2">
+          <h3 id="bk2">Vos goûts, votre budget</h3>
+          <div class="field">
+            <label for="budget">Budget&nbsp;: <b id="budgetOut">40&nbsp;€</b></label>
+            <input id="budget" name="budget" type="range" min="15" max="150" step="5" value="40">
+          </div>
+          <fieldset class="chips chips--sw" aria-label="Couleurs préférées">
+            <legend>Couleurs <small>(plusieurs choix possibles)</small></legend>
+            <label><input type="checkbox" name="couleur" value="Pastel"><span><i style="--c:#f0c4cb"></i>Pastel</span></label>
+            <label><input type="checkbox" name="couleur" value="Vives"><span><i style="--c:#f08a24"></i>Vives</span></label>
+            <label><input type="checkbox" name="couleur" value="Rouge"><span><i style="--c:#c1272d"></i>Rouge</span></label>
+            <label><input type="checkbox" name="couleur" value="Blanc"><span><i style="--c:#fbf7ef"></i>Blanc</span></label>
+            <label><input type="checkbox" name="couleur" value="Champêtre"><span><i style="--c:#b7c48a"></i>Champêtre</span></label>
+            <label><input type="checkbox" name="couleur" value="Automne"><span><i style="--c:#a4521f"></i>Automne</span></label>
+          </fieldset>
+          <div class="field">
+            <label for="carte">Petit mot sur la carte <small>(facultatif)</small></label>
+            <textarea id="carte" name="carte" rows="2" maxlength="160" placeholder="Joyeux anniversaire, maman…"></textarea>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="prenom">Votre prénom</label><input id="prenom" name="prenom" type="text" autocomplete="given-name" required placeholder="Camille"></div>
+            <div class="field"><label for="tel">Votre téléphone</label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06 12 34 56 78"></div>
+          </div>
+          <p class="bk__err" role="alert" aria-live="assertive"></p>
+          <div class="bk__nav"><button type="button" class="btn btn--line" data-prev><svg class="ico" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg><span>Retour</span></button><button type="submit" class="btn btn--fill" id="bkSubmit"><span>Voir mon récapitulatif</span><svg class="ico"><use href="#i-check"/></svg></button></div>
+        </section>
+
+        <!-- Étape 4 : ticket -->
+        <section class="bk__pane" data-pane="3" aria-labelledby="bk3">
+          <h3 id="bk3" class="sr-only">Récapitulatif de votre réservation</h3>
+          <div class="ticket" id="ticket" tabindex="-1">
+            <div class="ticket__top">
+              <p class="ticket__ref">Réf. <b id="tkRef">FO-0000</b></p>
+              <p class="ticket__ok"><svg class="ico"><use href="#i-check"/></svg> Récapitulatif prêt</p>
+            </div>
+            <dl class="ticket__list" id="tkList"></dl>
+          </div>
+          <p class="bk__notice"><b>Dernière étape&nbsp;:</b> la boutique n’est prévenue qu’une fois votre récapitulatif envoyé. Choisissez le moyen le plus simple pour vous.</p>
+          <div class="bk__actions" id="bkActions">
+            <a class="btn btn--fill btn--block" id="actCall" href="tel:+33442643505"><svg class="ico"><use href="#i-phone"/></svg><span>Appeler la boutique · 04 42 64 35 05</span></a>
+            <a class="btn btn--line btn--block" id="actSms" href="#" hidden><svg class="ico"><use href="#i-chat"/></svg><span>Envoyer par SMS</span></a>
+            <a class="btn btn--line btn--block" id="actMail" href="#" hidden><svg class="ico"><use href="#i-mail"/></svg><span>Envoyer par e-mail</span></a>
+            <button type="button" class="btn btn--line btn--block" id="actIcs"><svg class="ico"><use href="#i-calendar"/></svg><span>Ajouter à mon agenda (.ics)</span></button>
+            <button type="button" class="btn btn--line btn--block" id="actCopy"><svg class="ico"><use href="#i-copy"/></svg><span>Copier le récapitulatif</span></button>
+          </div>
+          <p class="bk__status" id="bkStatus" role="status" aria-live="polite"></p>
+          <div class="bk__nav bk__nav--end"><button type="button" class="btn btn--line" id="bkEdit"><span>Modifier ma demande</span></button></div>
+        </section>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOUS TROUVER ============ -->
+<section class="find" id="venir" aria-labelledby="findTitle">
+  <div class="wrap find__grid">
+    <div class="find__info">
+      <p class="eyebrow eyebrow--dark" data-reveal>Nous trouver</p>
+      <h2 id="findTitle" class="display display--m" data-split-title>Sur la place, <em>à deux pas de la Rotonde.</em></h2>
+      <address class="find__addr" data-reveal>
+        <svg class="ico"><use href="#i-pin"/></svg>
+        <span>Maison Fleurs d’Ô<br>Place Jeanne d’Arc<br>13100 Aix-en-Provence</span>
+      </address>
+      <a class="find__tel" href="tel:+33442643505" data-reveal><svg class="ico"><use href="#i-phone"/></svg> 04 42 64 35 05</a>
+      <table class="hours" id="hours" data-reveal>
+        <caption class="sr-only">Horaires d’ouverture</caption>
+        <tbody>
+          <tr data-d="1"><th scope="row">Lundi</th><td>9h30 – 19h30</td></tr>
+          <tr data-d="2"><th scope="row">Mardi</th><td>9h30 – 19h30</td></tr>
+          <tr data-d="3"><th scope="row">Mercredi</th><td>9h30 – 19h30</td></tr>
+          <tr data-d="4"><th scope="row">Jeudi</th><td>9h30 – 19h30</td></tr>
+          <tr data-d="5"><th scope="row">Vendredi</th><td>9h30 – 20h00</td></tr>
+          <tr data-d="6"><th scope="row">Samedi</th><td>9h30 – 20h00</td></tr>
+          <tr data-d="0"><th scope="row">Dimanche</th><td>9h30 – 13h00</td></tr>
+        </tbody>
+      </table>
+      <p class="find__note" data-reveal>Horaires susceptibles de varier les jours fériés.</p>
+      <div class="find__btns" data-reveal>
+        <a class="btn btn--fill magnetic" href="https://www.google.com/maps/place/Maison+Fleurs+d'%C3%B4/@43.5269561,5.4443361,17z/data=!4m6!3m5!1s0x12c98df3350ac09b:0xd684d86cc3b65869!8m2!3d43.5269561!4d5.4443361!16s%2Fg%2F11zyt47fx7" target="_blank" rel="noopener"><svg class="ico"><use href="#i-map"/></svg><span>Ouvrir dans Google Maps</span></a>
+        <a class="btn btn--line magnetic" href="https://www.google.com/maps/dir/?api=1&destination=43.5269561,5.4443361" target="_blank" rel="noopener"><svg class="ico"><use href="#i-arrow"/></svg><span>Itinéraire</span></a>
+      </div>
+    </div>
+    <div class="find__map" data-reveal>
+      <iframe title="Carte Google Maps : Maison Fleurs d’Ô, place Jeanne d’Arc, Aix-en-Provence" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=43.5269561,5.4443361%20(Maison%20Fleurs%20d%27%C3%94)&z=17&hl=fr&output=embed"></iframe>
+      <a class="find__pin" href="https://www.google.com/maps/place/Maison+Fleurs+d'%C3%B4/@43.5269561,5.4443361,17z/data=!4m6!3m5!1s0x12c98df3350ac09b:0xd684d86cc3b65869!8m2!3d43.5269561!4d5.4443361!16s%2Fg%2F11zyt47fx7" target="_blank" rel="noopener">Voir sur Google Maps <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq" aria-labelledby="faqTitle">
+  <div class="wrap faq__grid">
+    <div>
+      <p class="eyebrow eyebrow--dark" data-reveal>Bon à savoir</p>
+      <h2 id="faqTitle" class="display display--m" data-split-title>Les questions <em>qu’on nous pose.</em></h2>
+    </div>
+    <div class="faq__list" data-reveal>
+      <details><summary>Comment réserver mon bouquet&nbsp;?</summary><div><p>Remplissez le formulaire de réservation (deux minutes)&nbsp;: occasion, jour et heure de retrait, budget, couleurs. Vous obtenez un récapitulatif avec une référence, prêt à être transmis à la boutique en un clic, et ajouté à votre agenda si vous le souhaitez.</p></div></details>
+      <details><summary>Livrez-vous&nbsp;?</summary><div><p>Oui, à Aix-en-Provence et aux Milles. Pour les livraisons rapides, y compris le dimanche en 3&nbsp;h, la boutique s’appuie sur le réseau Florajet. Indiquez l’adresse dans votre réservation&nbsp;: la boutique confirme la faisabilité et le tarif.</p></div></details>
+      <details><summary>Êtes-vous ouverts le lundi et le dimanche&nbsp;?</summary><div><p>Oui, 7j/7&nbsp;: 9h30–19h30 du lundi au jeudi, 9h30–20h le vendredi et le samedi, 9h30–13h le dimanche. Les jours fériés, les horaires peuvent varier.</p></div></details>
+      <details><summary>Puis-je composer mon bouquet moi-même&nbsp;?</summary><div><p>Bien sûr. Choisissez vos fleurs une à une sur l’étal, l’équipe compose et emballe sous vos yeux. Des bouquets DIY, à composer chez soi, sont aussi proposés.</p></div></details>
+      <details><summary>Vendez-vous autre chose que des fleurs coupées&nbsp;?</summary><div><p>Des plantes (orchidées, oliviers en pot…), des fleurs séchées et quelques petites attentions pour accompagner le bouquet&nbsp;: chocolats, bougies, douceurs.</p></div></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot" id="foot">
+  <div class="foot__lattice" aria-hidden="true"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#lattice)"/></svg></div>
+  <div class="wrap foot__top">
+    <div>
+      <p class="foot__lead">Passez nous voir, ou laissez-nous préparer quelque chose de beau.</p>
+      <a class="btn btn--fill btn--big magnetic" href="#reserver"><span>Réserver un bouquet</span><svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="foot__cols">
+      <div>
+        <h3>Boutique</h3>
+        <p>Place Jeanne d’Arc<br>13100 Aix-en-Provence</p>
+        <p><a href="tel:+33442643505">04 42 64 35 05</a></p>
+      </div>
+      <div>
+        <h3>Horaires</h3>
+        <p>Lun–jeu&nbsp;: 9h30–19h30<br>Ven–sam&nbsp;: 9h30–20h<br>Dim&nbsp;: 9h30–13h</p>
+      </div>
+      <div>
+        <h3>Suivre</h3>
+        <ul class="social">
+          <li><a href="https://www.tiktok.com/@maisonfleursdo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-tiktok"/></svg> TikTok @maisonfleursdo</a></li>
+          <li><a href="https://www.google.com/maps/place/Maison+Fleurs+d'%C3%B4/@43.5269561,5.4443361,17z/data=!4m6!3m5!1s0x12c98df3350ac09b:0xd684d86cc3b65869!8m2!3d43.5269561!4d5.4443361!16s%2Fg%2F11zyt47fx7" target="_blank" rel="noopener"><svg class="ico"><use href="#i-map"/></svg> Google Maps · 63 avis</a></li>
+          <li><a href="https://www.florajet.com/fleuriste/bouches-du-rhone-13/aix-en-provence-13100/fleurs-d-o-132789.html" target="_blank" rel="noopener"><svg class="ico"><use href="#i-truck"/></svg> Commander via Florajet</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="foot__giant" id="footGiant" aria-hidden="true"><span>Fleurs</span> <span>d’Ô</span></p>
+  <div class="wrap foot__bottom">
+    <p>© <span id="year">2026</span> Maison Fleurs d’Ô · Aix-en-Provence</p>
+    <p>Vidéos&nbsp;: <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels</a> (licence libre) · Photos du kiosque&nbsp;: Google Maps · Sélection&nbsp;: catalogue Florajet</p>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="tel:+33442643505" aria-label="Appeler la boutique"><svg class="ico"><use href="#i-phone"/></svg><span>Appeler</span></a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
+  <button class="lightbox__close" id="lbClose" aria-label="Fermer"><svg class="ico"><use href="#i-close"/></svg></button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Photo précédente"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+  <figure><img id="lbImg" alt="" src=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Photo suivante"><svg class="ico"><use href="#i-arrow"/></svg></button>
+</dialog>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
